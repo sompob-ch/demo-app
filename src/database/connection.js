@@ -5,8 +5,7 @@ class MongoDatabase {
   clientOptions;
   connection;
   constructor() {
-    this.uri =
-      "mongodb+srv://";
+    this.uri = process.env.MONGODB_URI;
     this.clientOptions = {
       serverApi: { version: "1", strict: true, deprecationErrors: true },
     };
