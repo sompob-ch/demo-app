@@ -1,2 +1,2 @@
 gcloud config set project myorder-research-101
-gcloud run services replace deployment.yml -allow-unauthenticated
+gcloud run services replace deployment.yml
