@@ -3,6 +3,7 @@
 - nodeJs
 - npm
 
+```sh
 docker build -t NAME:TAG .
 docker images
 docker run -d -p 8080:80 nginx:alpine 
@@ -19,3 +20,12 @@ docker rm CONTAINER_NAME or CONTAINER_ID
 docker rmi IMAGE_ID
 
 docker compose up --build
+```
+
+## Deployment
+
+```sh
+docker build -t asia-southeast1-docker.pkg.dev/myorder-research-101/mod-infrastructor-101/sompob-api:1.0 .
+docker images
+docker push asia-southeast1-docker.pkg.dev/myorder-research-101/mod-infrastructor-101/sompob-api:1.0
+```
