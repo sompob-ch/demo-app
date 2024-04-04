@@ -2,6 +2,9 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: sompob-api
+  namespace: myorder-research-101
+  labels:
+    cloud.googleapis.com/location: asia-southeast1
 spec:
   template:
     spec:
