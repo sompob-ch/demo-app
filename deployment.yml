@@ -5,6 +5,8 @@ metadata:
   namespace: myorder-research-101
   labels:
     cloud.googleapis.com/location: asia-southeast1
+  annotations:
+    run.googleapis.com/binary-authorization: allUsers
 spec:
   template:
     spec:
