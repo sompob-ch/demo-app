@@ -11,7 +11,7 @@ spec:
   template:
     spec:
       containers:
-      - image: asia-southeast1-docker.pkg.dev/myorder-research-101/mod-infrastructor-101/sompob-api:1.0 .
+      - image: asia-southeast1-docker.pkg.dev/myorder-research-101/mod-infrastructor-101/sompob-api:1.0
         env:
         - name: MONGODB_URI
           value: "mongodb+srv://<USER>:<PASS>@cluster0.xfdupoe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
